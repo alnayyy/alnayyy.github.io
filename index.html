@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wabsite Profil Diri</title>
+    <title>Website Profil Diri</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
@@ -27,7 +27,7 @@
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
-                <li><a href="https://wa.me/6282127869361">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
@@ -56,38 +56,72 @@
                 <img src="img/alnay.png" class="image" alt="Foto Profil"/>
             </aside>
         </div>
-        <div class ="container" id="one">
-            <div class="box flexone">
-                        <h2 class="hobi">Hobi</h2>
-                        <ol type="1">
-                            <li class="hobi">Jalan-jalan</li>
-                            <li class="hobi">Jajan</li>
-                            <li class="hobi"><a href="https://www.youtube.com/watch?v=RY3RRlF5iiM" >nonton</a></li>
-                        </ol>
-            </div>
-            <div class="box flextwo" id="two">
-                <h2 class="skills">Skills</h2>
-                <h3 class="Softskills">Softskills</h3>
-                <p class="Softskills">mampu beradaptasi</p>
-                <p class="Softskills">Kerjasama tim</p>
-                <h3 class="Hardskills">Hardskills</h3>
-                <p class="Hardskills">Ms.word</p>
-                <p class="Hardskills">Canva</p>
+        <div class="myhobi">
+                <h2>Hobi</h2>
+                <div id = "one">
+                    <div class = "jalan_jalan"> 
+                        <img src="https://static.republika.co.id/uploads/images/inpicture_slide/0-31319600-1577188272-1576673735_1-org-jpg.jpeg" alt="jalan-jalan">
+                        <p class="hobi">Jalan-jalan</p>
+                    </div>
+
+                    <div class = "nonton">
+                        <img src="https://media.suara.com/pictures/653x366/2023/06/13/20761-ilustrasi-nonton-film-7-link-nonton-film-gratis-tanpa-iklan-freepik.jpg" alt="Nonton">
+                        <p class="hobi">Nonton </p>
+                    </div>
+                    
+                    <div class="jajan"> 
+                        <img src = "https://oss.mommyasia.id/photo/5cb3af0c5e5e47616be37ab0?x-oss-process=style/_l" alt="jajan"> 
+                        <p class="hobi">Jajan</p>        
+                    </div>
+                </div>
+        </div>
+            <div id="two">
+                <div id="two">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2"><h2>Skills</h2></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="softskills"><h3>Soft Skill</h3></td>
+                                <td class="hardskills"><h3>Hard Skill</h3></td>
+                            </tr>
+                            <tr>
+                                <td class="softskills">Mampu Beradaptasi</td>
+                                <td class="hardskills">Ms.Word</td>
+                            </tr>
+                            <tr>
+                                <td class="softskills">Kerjasama Tim</td>
+                                <td class="hardskills">Canva</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                
             </div>
         </div>
         <div class="lesson">
             <h2 >Lesson Learned</h2>
-            <p>Saya menjadi lebih mengetahui mengenai CSS dan HTML</p>
+            <p>Saya dapat mengetahui lebih dalam mengenai CSS dan HTML sehingga dapat membuat website statis sederhana</p>
         </div>
         <div class ="harapan">
             <h2 >Harapan setelah lulus</h2>
-            <p>Menjadi manusia yang bermanfaat bagi orang disekitar</p>
+            <p>Saya berharap dapat menjadi manusia yang bermanfaat dan bisa membantu orang disekitar saya</p>
+        </div>
+
+        <div class="kampus"> 
+            <h2 >My Campus</h2>
+            <h3 >Politeknik Negeri Bandung</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3961.163211802573!2d107.5706277!3d-6.8710383!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e420abc30acf%3A0x10569255865460a5!2sPoliteknik%20Negeri%20Bandung!5e0!3m2!1sid!2sid!4v1709917208783!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
     <footer>
-            <p>Politeknik Negeri Bandung</p>
-            <a href="https://maps.app.goo.gl/BKwhDjkkXJSWNJUY7">Maps</a>
-        </footer>
+        <div class="footer-content">
+            <img src="https://www.polban.ac.id/wp-content/uploads/2018/06/logo-polban-80.png" alt="Polban logo" class="logo">
+            <p>Politeknik Negeri Bandung<br>Phone: (022) 250 4666</p>
+        </div>
+    </footer>
         
 </div>
     <script src="js/main.js"></script>
