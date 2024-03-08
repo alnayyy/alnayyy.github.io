@@ -1,57 +1,91 @@
+:root {
+  --blue:#84ced4;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
 }
 
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x:   hidden;
 }
 
-
-body {
-  font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
+header {
+  position: fixed;
+  top:0; 
+  left: 0;
+  right: 0;
+  background-color: rgb(57, 88, 99);
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* z-index: : 1000;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); */
 }
 
 /*navbar*/
-nav {
+ nav {
   display: flex;
-  background-color: rgb(57, 88, 99);
-  justify-content: space-around;
-  /* padding: 20px 0; atas bawah 20  kiri kanan 0 */
-  /* atur padding dengan flex */
-  height: 55px;
+  /* height: 55px; */
   align-items: center;
   color: whitesmoke;
-  font-size: large;
+  font-size: medium;
+  justify-content: space-between;
+  /* justify-content: space-around; */
 }
 
 nav ul {
   display: flex;
   list-style: none;
   width: 40%;
-  justify-content: right;
-  text-indent: 10px;
-  transition: all 0.4s;
-}
+  text-indent: 2px;
+  transition: 0.2s;
+  padding-left: 15px;
+} 
 
 nav .logo {
+  margin-left: 5%;
+  font-size: 3rem;
   font-family: "fantasy", cursive;
-  letter-spacing: 3px;
-  /*space antar char*/
+  letter-spacing: 1px;
+  font-weight: bolder;
+  color: azure;
 }
+
+nav .logo span {
+  color:whitesmoke;
+}
+
 
 nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.1rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+  font-size: 2rem;
+  padding: 2rem;
 }
 
-nav ul li a:hover {
-  color: teal;
+header .navbar ul li a:hover {
+  color: var(--blue);
+}
+
+header .icon {
+  margin-left: 1.5rem;
+  font-size: large;
+}
+
+header .icon a {
+  justify-content: space-around;
+  color: white;
 }
 
 /* hamburger menu */
@@ -62,6 +96,8 @@ nav ul li a:hover {
   justify-content: space-between;
   position: relative;
 }
+
+
 
 .menu-toggle input {
   position: absolute;
@@ -85,11 +121,11 @@ nav ul li a:hover {
 
 /*x on hamburger menu*/
 .menu-toggle span:nth-child(2) {
-  transform-origin: left center;
+  transform-origin: right center;
 }
 
 .menu-toggle span:nth-child(4) {
-  transform-origin: left center;
+  transform-origin: right center;
 }
 
 .menu-toggle input:checked~span:nth-child(2) {
@@ -106,23 +142,29 @@ nav ul li a:hover {
   opacity: 0;
   transition: .1s
 }
-
-.flexone image {
+.image {
+  margin-top: 30px;
+  margin=bottom: 0;
   width: auto;
-  height: 100%;
+  height: 280px;
   display: block;
-  /* margin-left: auto;
-    margin-right: auto; */
+  margin-right: 100px;
+    
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   padding: 8px;
   border-radius: 5px;
   margin: 0 auto;
+ background-color: var(--blue);
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 main {
@@ -130,10 +172,20 @@ main {
   flex-direction: row; */
 }
 
-.polban {
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+.polban img {
   width: 100%;
-  height: 50%;
-  animation: blink 2s ease-in-out infinite;
+  height: 500px;
+  animation:blink 1s ease-in-out;
+
+}
+.polban{ 
+  width: 100%;
 }
 
 .box {
@@ -163,7 +215,6 @@ footer {
   font-size: x-large;
   padding-left: 500px;
   background-color: rgb(51, 107, 166);
-
 }
 
 h2  {
@@ -171,10 +222,11 @@ h2  {
   color: rgb(84, 84, 156);
   text-justify: inter-word;
   word-wrap: break-word;
-
+  font-size: xx-large;
 }
 
 .flextwo article p {
+  font-size: large;
   padding-top: 5px;
   color: black;
   text-justify: inter-word;
@@ -221,16 +273,16 @@ p {
     height: 100vh;
     justify-content: space-evenly;
     align-items: center;
-    background-color: coral;
-    /* transform: translateX(100%);  */
+    background-color: rgb(74, 152, 220);
+    transform: translateX(100%); 
     transition: all 0.72s;
-    opacity: 0;
+    opacity: 1;
     z-index: 2;
   }
 
   nav ul.menushow {
     opacity: 0.5;
-    /* transform: translateX(0); */
+    transform: translateX(0);
   }
 }
 
